@@ -9,7 +9,7 @@
     "start": "node app.js"
   },
   "author": "iigmir",
-  "license": "ISC",
+  "license": "unlicense",
   "devDependencies": {
     "mocha": "^10.2.0"
   }
