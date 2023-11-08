@@ -2,6 +2,8 @@
 
 For the [minigame in *Taiko Risshiden V DX*](https://wikiwiki.jp/taikou5dx/%E3%83%9F%E3%83%8B%E3%82%B2%E3%83%BC%E3%83%A0#k6908934).
 
+See also [tcmrst/TaikouRisshiden-sanjutsu](https://github.com/tcmrst/TaikouRisshiden-sanjutsu).
+
 ## Install
 
 Type `npm install`.
