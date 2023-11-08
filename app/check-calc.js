@@ -42,7 +42,7 @@ export const check_result = (operators = [], numbers = []) =>
     return executed_result === expected_result;
 };
 
-export const get_pool = () =>
+export const get_permutation = () =>
 {
     const source_array = Array.from({ length: 10000 }, (_, index) => index + 1);
     const get_unique_numbers = number => /^(?!.*(\d).*\1)(?!.*0)\d+$/g.test(String(number));
@@ -57,23 +57,23 @@ export const get_pool = () =>
  */
 export const get_suitable_number = (operators = []) =>
 {
-    const main = (operators = [], pool = [], index = 0) =>
+    const main = (operators = [], permutation = [], index = 0) =>
     {
-        if( !check_format(operators, pool[index]) )
+        if( !check_format(operators, permutation[index]) )
         {
             console.warn("Format invalid");
             return [];
         }
-        else if( index > pool.length )
+        else if( index > permutation.length )
         {
             console.warn("No suitable result");
             return [];
         }
-        else if( check_result(operators, pool[index]) )
+        else if( check_result(operators, permutation[index]) )
         {
-            return pool[index];
+            return permutation[index];
         }
-        return main( operators, pool, index + 1 );
+        return main( operators, permutation, index + 1 );
     };
-    return main( operators, get_pool(), 0 );
+    return main( operators, get_permutation(), 0 );
 };
