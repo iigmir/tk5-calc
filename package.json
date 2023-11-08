@@ -1,0 +1,16 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "iigmir",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
